@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Hogwarts</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #1b1b1b;
+      color: #f0dca0;
+    }
+
+    .header {
+      background-color: #3c1e05;
+      color: #ffd700;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 3px solid #8b0000;
+    }
+
+    /* ===== Navigasi Horizontal ===== */
+    .navbar {
+      background-color: #2a1f1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #8b0000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 5px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #f0dca0;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #8b0000;
+      color: #ffd700;
+    }
+
+    .navbar a.active {
+      background-color: #4b2e05;
+      color: #ffd700;
+    }
+
+    /* ===== Konten ===== */
+    .content {
+      padding: 20px;
+      background-color: #252525;
+      color: #f8f8f8;
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFD700;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 1.1em;
+      line-height: 1.6em;
+    }
+
+    .about-img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(224, 78, 106, 0.4);
+      width: 70%;
+      transition: transform 0.3s;
+    }
+
+    .about-img:hover {
+      transform: scale(1.05);
+    }
+
+    .footer {
+      background-color: #3c1e05;
+      color: #d4af37; /* emas hangat */
+      text-align: center;
+      padding: 5px 0;
+      border-top: 2px solid #8b0000;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"><marquee>Welcome to Hogwarts History</marquee></div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentanghogwarts.html" class="active">Tentang Hogwarts</a></li>
+      <li><a href="mantra.html">Daftar Mantra</a></li>
+      <li><a href="karakter.html">Karakter</a></li>
+      <li><a href="asrama.html">Asrama</a></li>
+      <li><a href="Media.html">Media</a></li>
+      <li><a href="lokasi.html">Lokasi Wisata</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Sejarah Hogwarts</h2>
+    <p>
+      Hogwarts didirikan lebih dari seribu tahun yang lalu oleh empat penyihir terkenal: Godric Gryffindor, Salazar Slytherin, Rowena Ravenclaw, dan Helga Hufflepuff.
+      Mereka masing-masing memiliki visi dan misi yang berbeda-beda tentang bagaimana sekolah sihir seharusnya dijalankan, namun mereka berhasil bekerja sama untuk menciptakan Hogwarts.
+    </p>
+
+    <img src="hogwarts.jpg" alt="Harry Potter" class="about-img" />
+  </div>
+
+  <div class="footer"><p>Harry Potter © 2025</p></div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Mantra</title>
+  <link rel="stylesheet" href="styles.css"/> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d0b13; /* gelap seperti aula Hogwarts */
+      color: #f0dca0;
+      margin: 0;
+    }
+
+    .header {
+      background-color: #2e1a05;
+      color: #ffd700;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 3px solid #8b0000;
+    }
+
+    /* ==== Navigasi di atas ==== */
+    .navbar {
+      background-color: #2a1f1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #8b0000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 5px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #f0dca0;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #8b0000;
+      color: #ffd700;
+    }
+
+    .navbar a.active {
+      background-color: #4b2e05;
+      color: #ffd700;
+    }
+
+    /* ==== Konten ==== */
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-top: 15px;
+      letter-spacing: 1px;
+    }
+
+    /* ==== Tabel gaya Hogwarts ==== */
+    table {
+      width: 85%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: rgba(40, 30, 20, 0.95);
+      color: #f8e5a2;
+    }
+
+    th {
+      background-color: #4b2e05;
+      color: #ffd700;
+      padding: 12px;
+      border: 1px solid #a67c00;
+      text-align: center;
+    }
+
+    td {
+      padding: 10px;
+      border: 1px solid #6b4b16;
+      text-align: center;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgba(80, 50, 20, 0.8);
+    }
+
+    tr:hover {
+      background-color: #8b0000;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    p {
+      color: #f0dca0;
+      text-align: center;
+      font-style: italic;
+      margin-top: 30px;
+    }
+
+    footer {
+      background-color: #2e1a05;
+      color: #d4af37; /* emas hangat */
+      text-align: center;
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      border-top: 1px solid #a67c00;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"><marquee>Daftar Mantra</marquee></div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentanghogwarts.html">Tentang Hogwarts</a></li>
+      <li><a href="mantra.html" class="active">Daftar Mantra</a></li>
+      <li><a href="karakter.html">Karakter</a></li>
+      <li><a href="asrama.html">Asrama</a></li>
+      <li><a href="Media.html">Media</a></li>
+      <li><a href="lokasi.html">Lokasi Wisata</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Daftar Mantra</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Mantra Serangan</th>
+          <th>Mantra Pertahanan</th>
+          <th>Mantra yang Dilarang</th>
+          <th>Mantra Lainnya</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Expelliarmus</td>
+          <td>Protego</td>
+          <td>Avada Kedavra</td>
+          <td>Lumos</td>
+        </tr>
+        <tr>
+          <td>Stupefy</td>
+          <td>Expecto Patronum</td>
+          <td>Crucio</td>
+          <td>Alohomora</td>
+        </tr>
+        <tr>
+          <td>Sectumsempra</td>
+          <td>Impedimenta</td>
+          <td>Imperio</td>
+          <td>Wingardium Leviosa</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>*Jenis mantra masih banyak lagi — ini hanya beberapa yang paling sering digunakan oleh para penyihir.</p>
+  </div>
+
+  <footer>
+    <p>&copy; Harry Potter © 2025</p>
+  </footer>
+</body>
+</html>

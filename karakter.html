@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karakter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1b1b1b;
+      color: #f0dca0;
+    }
+
+    .header {
+      background-color: #3c1e05;
+      color: #ffd700;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 3px solid #8b0000;
+    }
+
+    /* === Navigasi di atas === */
+    .navbar {
+      background-color: #2a1f1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #8b0000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 5px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #f0dca0;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #8b0000;
+      color: #ffd700;
+    }
+
+    .navbar a.active {
+      background-color: #4b2e05;
+      color: #ffd700;
+    }
+
+    /* === Konten utama === */
+    .content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .container-karakter {
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+      text-align: left;
+      padding: 0 40px;
+    }
+
+    .kolom {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .kolom h4 {
+      color: #ffd700;
+      border-bottom: 1px solid #8b0000;
+      padding-bottom: 5px;
+      margin-top: 15px;
+    }
+
+    .kolom ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    /* === Footer === */
+    footer, .footer {
+      background-color: #3c1e05;
+      color: #d4af37; /* emas hangat */
+      text-align: center;
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      border-top: 2px solid #8b0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="header"><marquee>Karakter dalam serial Harry Potter</marquee></div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentanghogwarts.html">Tentang Hogwarts</a></li>
+      <li><a href="mantra.html">Daftar Mantra</a></li>
+      <li><a href="karakter.html" class="active">Karakter</a></li>
+      <li><a href="asrama.html">Asrama</a></li>
+      <li><a href="Media.html">Media</a></li>
+      <li><a href="lokasi.html">Lokasi Wisata</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Beberapa Karakter dalam Harry Potter</h2>
+
+    <div class="container-karakter">
+      <!-- Kolom kiri -->
+      <div class="kolom">
+        <h4>The Golden Trio</h4>
+        <ul>
+          <li>Harry James Potter</li>
+          <li>Hermione Jean Granger</li>
+          <li>Ronald Bilius Weasley</li>
+        </ul>
+
+        <h4>The Silver Trio</h4>
+        <ul>
+          <li>Ginny Weasley</li>
+          <li>Neville Longbottom</li>
+          <li>Luna Lovegood</li>
+        </ul>
+
+        <h4>The Bronze Trio</h4>
+        <ul>
+          <li>Draco Malfoy</li>
+          <li>Vincent Crabbe</li>
+          <li>Gregory Goyle</li>
+        </ul>
+      </div>
+
+      <!-- Kolom kanan -->
+      <div class="kolom">
+        <h4>Death Eaters</h4>
+        <ul>
+          <li>Lord Voldemort</li>
+          <li>Bellatrix Lestrange</li>
+          <li>Peter Pettigrew</li>
+          <li>Lucius Malfoy</li>
+          <li>Narcissa Malfoy</li>
+          <li>Fenrir Greyback</li>
+          <li>Barty Crouch Jr.</li>
+        </ul>
+
+        <h4>Orde Phoenix</h4>
+        <ul>
+          <li>Albus Dumbledore</li>
+          <li>Sirius Black</li>
+          <li>Remus Lupin</li>
+          <li>Nymphadora Tonks</li>
+          <li>Alastor Moody</li>
+          <li>Arthur & Molly Weasley</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Harry Potter © 2025</p>
+  </footer>
+</body>
+</html>

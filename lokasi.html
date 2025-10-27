@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lokasi Wisata</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1b1b1b;
+      color: #f0dca0;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background-color: #3c1e05;
+      color: #ffd700;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 3px solid #8b0000;
+    }
+
+    /* === Navigasi horizontal === */
+    .navbar {
+      background-color: #2a1f1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #8b0000;
+    }
+
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .navbar li {
+      margin: 5px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #f0dca0;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #8b0000;
+      color: #ffd700;
+    }
+
+    .navbar a.active {
+      background-color: #4b2e05;
+      color: #ffd700;
+    }
+
+    /* === Konten utama === */
+    .content {
+      text-align: center;
+      padding: 30px 20px 80px 20px; /* beri ruang bawah agar tidak tertutup footer */
+    }
+
+    h2 {
+      color: #FFD700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      max-width: 750px;
+      margin: 10px auto;
+      line-height: 1.7em;
+      font-size: 16px;
+      color: #f0dca0;
+    }
+
+    .location-img {
+      width: 70%;
+      border-radius: 15px;
+      margin: 25px 0;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .location-img:hover {
+      transform: scale(1.05);
+    }
+
+    iframe {
+      width: 80%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+      margin: 25px 0;
+    }
+
+    /* === Footer === */
+    footer, .footer {
+      background-color: #3c1e05;
+      color: #d4af37; /* emas hangat */
+      text-align: center;
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+      border-top: 2px solid #8b0000;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <marquee>Lokasi The Making of Harry Potter</marquee>
+  </div>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentanghogwarts.html">Tentang Hogwarts</a></li>
+      <li><a href="mantra.html">Daftar Mantra</a></li>
+      <li><a href="karakter.html">Karakter</a></li>
+      <li><a href="asrama.html">Asrama</a></li>
+      <li><a href="Media.html">Media</a></li>
+      <li><a href="lokasi.html" class="active">Lokasi Wisata</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Warner Bros. Studio Tour London - The Making of Harry Potter</h2>
+    <p>
+      Warner Bros. Studio Tour London - The Making of Harry Potter adalah sebuah atraksi wisata di mana pengunjung dapat melihat langsung bagaimana film-film Harry Potter dibuat.
+    </p>
+
+    <p>
+      Tempat ini buka setiap hari dari pukul <b>08.30 hingga 22.00 WIB</b>.  
+      Khusus hari Jumat, buka dari pukul <b>09.30 hingga 22.00 WIB</b>.
+    </p>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.657279843042!2d-0.41747592403869566!3d51.690527171854094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48763f6fa2e6a7cf%3A0x5f3ec1f885ef8f1f!2sWarner%20Bros.%20Studio%20Tour%20London%20%E2%80%93%20The%20Making%20of%20Harry%20Potter!5e0!3m2!1sid!2sid!4v1734461400000!5m2!1sid!2sid"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <footer>
+    Harry Potter © 2025
+  </footer>
+</body>
+</html>
